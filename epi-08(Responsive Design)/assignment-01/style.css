@@ -1,59 +1,71 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-a{text-decoration: none;}
-
-.container{
-    max-width: 1280px;
-    margin: auto;
-
+a {
+    text-decoration: none;
 }
 
-html{
-    --text-color:#3936c4;
+.container {
+    max-width: 1280px;
+    margin: auto;
+}
+
+img {
+    max-width: 100%;
+}
+
+html {
+    --text-color: #3936c4;
     --font-family--: "Poppins", sans-serif;
-    --bg-color--:#FFFCF5;
+    --header-color--: #FFFCF5;
     --primary-font: "Poppins", sans-serif;
 }
 
-body{
+body {
     font-family: var(--primary-font)
 }
 
-navbar{
+/* header section stated */
+
+.header_color {
+    background-color: var(--header-color--);
+}
+
+navbar {
     display: flex;
     text-align: center;
     align-items: center;
-    justify-content:space-between;
-    padding: 10px 0;
+    justify-content: space-between;
+    padding: 20px 0;
 }
-.navberMenu{
+
+.navberMenu {
     gap: 40px;
     display: flex;
     flex-direction: row;
 }
 
-.navberMenu a{
+.navberMenu a {
     font-size: 16px;
-    font-weight:600;
+    font-weight: 600;
     color: #6A6E78;
 }
 
-.navberLogin{
+.navberLogin {
     font-size: 16px;
-    font-weight:600;
+    font-weight: 600;
     color: #6A6E78;
     margin-right: 16px;
 }
 
-.navberSignup{
+.navberSignup {
     font-size: 16px;
-    font-weight:600;
+    font-weight: 600;
     color: #6A6E78;
     border: 1.4px solid #E1E5E8;
     background-color: #fff;
@@ -61,45 +73,156 @@ navbar{
     border-radius: 5px;
 }
 
-.navberMenu .active{
+.navberMenu .active {
     color: var(--text-color);
 }
 
- @media(max-width:1024px){
-    .container{
-       overflow-x: hidden;
-       padding: 0 20px;
+banner {
+    display: flex;
+    padding: 40px 0;
+}
+
+.bannerLeft {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    align-items: start;
+    justify-content: center;
+}
+
+.bannerLeft h1 {
+    font-size: 70px;
+    font-weight: 600;
+    line-height: 80px;
+}
+
+.bannerLeft p {
+    font-size: 18px;
+    font-weight: 400;
+    margin: 30px 0;
+}
+
+.bannerLeft button {
+    border-radius: none;
+    background-color: var(--text-color);
+    border: none;
+    padding: 20px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #FFFFFF;
+    border-radius: 8px;
+}
+
+.bannerRight {
+    flex-basis: 50%;
+}
+
+.bannerRight img {
+    text-align: center;
+}
+
+
+/* --------------------------------------------- */
+@media(max-width:1024px) {
+    .container {
+        overflow-x: hidden;
+        padding: 0px 20px;
     }
-    .navberMenu{
+
+    .navberMenu {
         gap: 20px;
     }
-    .navberLogin{
+
+    .navberLogin {
+        margin-right: 20px;
+    }
+}
+
+@media (max-width:768px) {
+    .container {
+        overflow-x: hidden;
+        padding: 0 20px;
+    }
+
+    .navberMenu {
+        gap: 20px;
+    }
+
+    .navberLogin {
         margin-right: 20px;
     }
 
- }
+    .bannerLeft h1 {
+        font-size: 50px;
+        font-weight: 600;
+        line-height: 60px;
+    }
 
- @media (max-width:764px) {
-    .container{
-        overflow-x: hidden;
-        padding: 0 20px;
-     }
-     .navberMenu{
-         gap: 20px;
-     }
-     .navberLogin{
-         margin-right: 20px;
-     }
- }
+    .bannerLeft p {
+        margin: 18px 0;
+        font-size: 18px;
+    }
 
- @media (max-width:425px) {
-    navbar{
+    banner {
+        gap: 20px;
+    }
+
+    .bannerLeft {
+        flex-basis: 50%;
+    }
+
+    .bannerRight {
+        flex-basis: 50%;
+    }
+
+    .bannerLeft button {
+        padding: 14px 20px;
+        font-size: 18px;
+        font-weight: 500;
+    }
+}
+
+@media (max-width:425px) {
+    navbar {
         flex-direction: column;
     }
-    .navberMenu{
+
+    .navberMenu {
         gap: 15px;
         display: flex;
         flex-direction: row;
         margin: 10px;
     }
- }
+
+    banner {
+        gap: 50px;
+        padding: 40px 10px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .bannerLeft {
+        flex-basis: 100%;
+    }
+
+    .bannerRight {
+        flex-basis: 100%;
+    }
+
+    .bannerLeft h1 {
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 50px;
+    }
+
+    .bannerLeft p {
+        margin: 20px 0;
+        font-size: 18px;
+    }
+
+    .bannerLeft button {
+        padding: 14px 20px;
+        font-size: 18px;
+        font-weight: 500;
+    }
+}
