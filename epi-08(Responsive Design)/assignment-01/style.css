@@ -24,10 +24,28 @@ html {
     --font-family--: "Poppins", sans-serif;
     --header-color--: #FFFCF5;
     --primary-font: "Poppins", sans-serif;
+    --text-p-color: #545360;
+
 }
 
 body {
     font-family: var(--primary-font)
+}
+
+.costom_button {
+    border-radius: none;
+    background-color: var(--text-color);
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #FFFFFF;
+    border-radius: 8px;
+    line-height: 30px;
+    text-align: center;
+    width: 170px;
+    height: 60px;
+    
 }
 
 /* header section stated */
@@ -100,6 +118,8 @@ banner {
     font-size: 18px;
     font-weight: 400;
     margin: 30px 0;
+    color: #545360;
+    ;
 }
 
 .bannerLeft button {
@@ -120,23 +140,152 @@ banner {
 .bannerRight img {
     text-align: center;
 }
+
 /* header section end */
 
-.associated_section h2{
-font-size: 32px;
-font-weight: 700;
-padding: 50px 0px 50px 0px;
-text-align: center;
+.associated_section h2 {
+    font-size: 32px;
+    font-weight: 700;
+    padding: 50px 0px 50px 0px;
+    text-align: center;
 }
 
-.associated-items{
+.associated-items {
     display: flex;
     text-align: center;
     flex-direction: row;
     justify-content: space-around;
     padding-bottom: 50px;
+}
+
+/* Associated with section end */
+
+/* works section stated */
+
+.work_header {
+    font-size: 42px;
+    font-weight: 600;
+    text-align: center;
+    padding: 50px 0 30px 0;
+}
+
+.work_title {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: center;
+    color: #545360;
+}
+
+.works_card_main_div {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.works_card_main_div .active {
+    background-color: #dfe4ea
+}
+
+.works_card_main_div .active a {
+    color: #3936C4;
 
 }
+
+.worksCard {
+    border: 1px solid #E4E4ED;
+    text-align: start;
+    padding: 40px;
+    border-radius: 5px;
+}
+
+.worksCard h3 {
+    margin: 20px 0;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.worksCard p {
+    padding: 18px 0;
+    color: var(--text-p-color);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+
+}
+
+.worksCard a {
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 28px;
+    color: black;
+}
+
+/* Dream job section stated */
+.dreamJob {
+    display: flex;
+    /* border: 1px solid green; */
+    gap: 80px;
+    margin: 140px 0;
+}
+
+.dreamJobTitle {
+    flex-basis: 50%;
+    /* border: 1px dotted brown; */
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.dreamJobTitle h2 {
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 52px;
+    color: #21202A;
+}
+
+.dreamJobTitle p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    color: #545360;
+    margin: 18px 0 28px 0;
+}
+
+.jobItms{
+    margin-bottom:38px ;
+}
+
+.dreamJobTitle span {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    color: #21202A;
+    margin-left: 8px;
+}
+
+.dreamJobTitle i {
+    color: #8A5CD7;
+    font-size: 20px;
+}
+
+.dreamJobImg {
+    flex-basis: 50%;
+    /* border: 1px dotted rgb(63, 42, 165); */
+}
+
+.dreamJobImg img {
+    object-fit: cover;
+    object-position: top;
+    /* width: 100%; */
+
+}
+
 
 
 /* --------------------------------------------- */
@@ -197,6 +346,16 @@ text-align: center;
         font-size: 18px;
         font-weight: 500;
     }
+
+    .works_card_main_div {
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .dreamJob{
+       flex-direction: column-reverse;
+    }
 }
 
 @media (max-width:425px) {
@@ -243,24 +402,34 @@ text-align: center;
         font-weight: 500;
     }
 
-    .associated_section h2{
-        padding:30px 0 20px 0;
+    .associated_section h2 {
+        padding: 30px 0 20px 0;
         border-bottom: 2px solid chartreuse;
     }
 
-    .associated-items{
+    .associated-items {
         display: flex;
         text-align: center;
         flex-direction: column;
-        align-items:center ;
+        align-items: center;
         padding-bottom: 50px;
 
     }
 
-    .associated-items img{
+    .associated-items img {
         object-fit: cover;
         width: 250px;
         margin: 20px 0;
-        object-position: center;  
+        object-position: center;
+    }
+
+    .works_card_main_div {
+
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .dreamJobTitle h2{
+        font-size: 35px;
     }
 }
