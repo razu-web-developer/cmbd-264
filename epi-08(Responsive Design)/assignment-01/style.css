@@ -45,7 +45,7 @@ body {
     text-align: center;
     width: 170px;
     height: 60px;
-    
+
 }
 
 /* header section stated */
@@ -257,8 +257,8 @@ banner {
     margin: 18px 0 28px 0;
 }
 
-.jobItms{
-    margin-bottom:38px ;
+.jobItms {
+    margin-bottom: 38px;
 }
 
 .dreamJobTitle span {
@@ -286,6 +286,77 @@ banner {
 
 }
 
+/* featured-jobs-section stated */
+
+.featured_jobs_hading {
+    font-size: 42px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 18px;
+    color: #21202A;
+    margin-bottom: 70px;
+
+}
+
+.featured_jobs_hading p {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    color: #545360;
+}
+
+.featured_jobs_continer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.featured_job_Box {
+    height: 320px;
+    border: 1px solid #E2E2EB;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 22px 10px 22px;
+    border-radius: 12px;
+}
+
+.featured_job_Box h3 {
+    font-size: 24px;
+    font-weight: 600;
+    text-align: left;
+}
+
+.featured_job_Box span {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.featured_job_Box .fullTime {
+    margin-left: 70px;
+    background-color: #ffcccc;
+    color: #FF8100;
+    padding: 3px 5px;
+    border-radius: 5px;
+}
+
+.featured_job_Box button {
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #21202A;
+    color: #FFFFFF;
+    padding: 6px 15px;
+    border-radius: 6px;
+}
+
+.featured_job_Box img {
+    width: 54px;
+    height: 54px;
+    border-radius: 6px;
+    object-fit: cover;
+    object-position: center;
+}
 
 
 /* --------------------------------------------- */
@@ -353,8 +424,22 @@ banner {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .dreamJob{
-       flex-direction: column-reverse;
+    .dreamJob {
+        flex-direction: column-reverse;
+    }
+
+    .featured_jobs_continer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .featured_jobs_hading {
+        font-size: 35px;
+        font-weight: 400;
+        text-align: center;
+        margin-bottom: 18px;
+        color: #21202A;
     }
 }
 
@@ -429,7 +514,29 @@ banner {
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .dreamJobTitle h2{
+    .dreamJobTitle h2 {
         font-size: 35px;
+    }
+
+
+    .featured_jobs_continer {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+    }
+
+    .featured_jobs_hading {
+        font-size: 25px;
+        font-weight: 400;
+        text-align: center;
+        margin-bottom: 18px;
+        color: #21202A;
+    }
+
+    .featured_jobs_hading p {
+        font-size: 12px;
+        font-weight: 400;
+        text-align: center;
+        color: #545360;
     }
 }
