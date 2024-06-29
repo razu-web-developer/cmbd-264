@@ -19,6 +19,10 @@ img {
     max-width: 100%;
 }
 
+li {
+    list-style-type: none;
+}
+
 html {
     --text-color: #3936c4;
     --font-family--: "Poppins", sans-serif;
@@ -86,8 +90,8 @@ navbar {
     font-weight: 600;
     color: #6A6E78;
     border: 1.4px solid #E1E5E8;
-    background-color: #fff;
-    padding: 4px 10px;
+    background-color: #FFFCF5;
+    padding: 8px 15px;
     border-radius: 5px;
 }
 
@@ -358,6 +362,168 @@ banner {
     object-position: center;
 }
 
+/* What job seekar says section stated  */
+
+.job_seekar {
+    margin: 160px 0;
+}
+
+.job_seekar_Title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.job_seekar_Title h2 {
+    font-size: 42px;
+    font-weight: 600;
+    text-align: start;
+    margin-bottom: 18px;
+    color: #21202A;
+    /* margin-bottom: 18px; */
+}
+
+.job_seekar_Title p {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: start;
+    color: #545360;
+}
+
+.job_seekar_Title button {
+    text-align: center;
+}
+
+.job_seekar_Title_box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin: 70px 0;
+}
+
+.job_seekar_Title_box .card {
+    height: 414px;
+    border: 1px solid #E2E2EB;
+    padding: 22px;
+    text-align: start;
+    border-radius: 12px;
+}
+
+.job_seekar_Title_box .card img {
+    height: 54px;
+    width: 54px;
+    border-radius: 100%;
+    object-fit: cover;
+    object-position: center;
+    margin: 20px 0;
+}
+
+.job_seekar_Title_box .card i {
+    color: #FF8100;
+    font-size: 20px;
+}
+
+.job_seekar_Title_box .card p {
+    margin: 22px 0 40px 0;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 28px;
+    color: #545360;
+}
+
+.job_seekar_Title_box .card h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: -20px;
+}
+
+.job_seekar_Title_box .card p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #545360;
+}
+
+/* resume section stated  */
+.resume {
+    height: 304px;
+    background-color: #3936C4;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 12px;
+}
+
+.resume h2 {
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 52px;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.resume button {
+    height: 60px;
+    width: 240px;
+    background-color: #FFFFFF;
+    color: #3936C4;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 30px;
+    border-radius: 10px;
+    border: none;
+}
+
+footer {
+    margin-top: 160px;
+    padding-top: 200px;
+    background-color: #21202A;
+    height: 460px;
+}
+
+.footerTop {
+    border-bottom: 1px solid #3E3C50;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px dotted brown; */
+}
+
+.footerTop h2 {
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 52px;
+    color: #FFFFFF;
+}
+
+.footerTop button {
+    width: 267px;
+    height: 72px;
+    gap: 0px;
+    border-radius: 6px;
+    border: none;
+    background-color: #3936C4;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 28px;
+}
+
+.footer_menu {
+    display: flex;
+    flex-direction: row;
+    gap: 42px;
+    margin-top: 30px;
+    justify-content: end;
+}
+
+.footer_menu a {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #B5BAC6;
+}
 
 /* --------------------------------------------- */
 @media(max-width:1024px) {
@@ -441,6 +607,37 @@ banner {
         margin-bottom: 18px;
         color: #21202A;
     }
+
+    .job_seekar_Title_box {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .resume {
+        flex-direction: column;
+    }
+
+    .footerTop {
+        flex-direction: column;
+    }
+
+    .footerTop h2 {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    footer {
+        margin-top: 120px;
+        padding-top: 80px;
+    }
+
+    .footerTop {
+        padding-bottom: 30px;
+    }
+
+    .footer_menu {
+        justify-content: center;
+    }
+
 }
 
 @media (max-width:425px) {
@@ -539,4 +736,60 @@ banner {
         text-align: center;
         color: #545360;
     }
+
+    .job_seekar_Title_box {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+        margin: 70px 0;
+    }
+
+    .job_seekar_Title {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .job_seekar_Title h2 {
+        font-size: 35px;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 18px;
+
+    }
+
+    .job_seekar_Title p {
+        font-size: 15px;
+        font-weight: 300;
+        text-align: center;
+        color: #545360;
+    }
+
+    .job_seekar_Title_button {
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+    .resume h2 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .resume h2 br {
+        display: none;
+    }
+
+    .footerTop h2 {
+        font-size: 35px;
+    }
+
+    .footerTop h2 br {
+        display: none;
+    }
+
+    .footer_menu {
+        gap: 20px;
+        justify-content: center;
+    }
+
 }
