@@ -167,21 +167,20 @@ nav a {
 /* New Project container side */
 
 .new-project-container {
-
-    position: relative;
-    background-image: url('./img/image5.png');
-    position: relative;
+    background-image: url('./img/download.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 
-.new-project-div::before {
+/* .new-project-div::before {
     content: '';
     position: absolute;
-    background-color: #78E5EB;
     width: 100%;
     height: 100%;
     z-index: -1;
-}
+}  */
 
 .new-project-side {
     display: flex;
