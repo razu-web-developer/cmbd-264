@@ -180,10 +180,6 @@ li {
 /* hero section end */
 
 /* Provide best Chips section */
-.provide-Chips-section {
-    /* height: 700px; */
-    border: 1px solid lawngreen;
-}
 
 .provide-header-title {
     font-size: 42px;
@@ -198,7 +194,7 @@ li {
 .Provide-chips-container {
     display: flex;
     gap: 150px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     position: relative;
 
 }
@@ -303,7 +299,7 @@ li {
 }
 
 .Find-Best-card img:first-child {
-    border: 1px solid rgb(0, 255, 21);
+    /* border: 1px solid rgb(0, 255, 21); */
     object-fit: cover;
     object-position: top;
     width: 100%;
@@ -330,6 +326,63 @@ li {
     height: 18px;
     margin: 8px 0;
 }
+
+/* Our Popular Crisps section stated */
+
+.Popular-Crisps-section {
+    display: flex;
+    /* border: 2px solid orange; */
+    gap: 30px;
+    margin-bottom: 200px;
+}
+
+
+.Popular-Crisps-section h2 {
+    color: var(--text-color);
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 46px;
+    text-align: left;
+    padding-bottom: 64px;
+}
+
+.Popular-Crisps-section h3 {
+    font-family: var(--font-family-Monrope);
+    color: var(--text-color);
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 32px;
+    text-align: left;
+    margin: 20px 0 10px 0;
+
+}
+
+.Popular-vide-icon {
+    background-color: var(--text-color);
+    color: #FFFFFF;
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    font-size: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+
+}
+
+.Popular-Crisps-section p {
+
+    font-family: var(--font-family-Monrope);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    color: #5D696D;
+    margin-left: 10px;
+}
+
+
 
 @media (max-width:1024px) {
     .navbar {
