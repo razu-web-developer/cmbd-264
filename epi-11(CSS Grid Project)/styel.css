@@ -303,7 +303,7 @@ li {
 }
 
 .Find-Best-card img:first-child {
-    border: 1px solid gold;
+    border: 1px solid rgb(0, 255, 21);
     object-fit: cover;
     object-position: top;
     width: 100%;
